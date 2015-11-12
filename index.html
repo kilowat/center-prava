@@ -10,18 +10,21 @@
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Roboto+Slab&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-      <script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script>
-      <script src="/js/jquery-2.1.4.min.js" type="text/javascript">\</script>
+    <link href="/css/swiper.min.css" rel="stylesheet">
+      <script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript"></script>
+      <script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
+      <script src="/js/app.js"></script>
+      <script src="/js/swiper.min.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="wrapper top-section-wrapper">
-      <div class="top-section-left">
-        <a href="/">
-          <img src="/images/logo.png" alt="центр права">
+      <div class="top-section">
+        <a href="/" class="logo-link">
+          <img src="/images/logo.png" class="logo" alt="центр права">
         </a>
-       </div>
+        <button id="show-menu-btn">Меню</button>
         <div class="top-section-right">
           <div class="top-section-info">
             <div class="top-section-col slogan">De lege feneda</div>
@@ -48,18 +51,65 @@
               <li><a href="#">Стоймость услуг</a></li>
               <li><a href="#">Отзывы</a></li>
             </ul>
+            <script>
+              $('#show-menu-btn').click(function(){
+                $('.top-menu').slideToggle();
+              });
+            </script>
           <!--end component top menu-->
           </nav>
          </div>
+        </div>
        </div>
        <!--start component main slider-->
        <div class="main-slider">
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-head">
+                  <h2>Обзор изменений в законе о пресональных данных от Дмитрия Масекина</h2>
+                </div>
+                <a class="see-detail" href="#" title="Подробнее">Хочу подробнее</a>
+                <div style="background: rgba(0, 0, 0, 0) url(/images/slide-1.jpg) no-repeat scroll top center / cover ;height: 100%;width: 100%;"> </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide-head">
+                  <h2>Заголовок слайда1</h2>
+                </div>
+                <a class="see-detail" href="#" title="Подробнее">Хочу подробнее</a>
+                <div style="background: rgba(0, 0, 0, 0) url(/images/slide-1.jpg) no-repeat scroll top center / cover ;height: 100%;width: 100%;"> </div>
+              </div>
+              
+            </div>
+          </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next">next</div>
+              <div class="swiper-button-prev">prev</div>
+              <script>
+                $(document).ready(function(){
+                  var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    paginationClickable: true,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: 250000,
+                    autoplayDisableOnInteraction: false,
+                    loop: true
+                  });
+                })
+              </script>
+          </div>
        </div>
        <!--end component main slider--> 
   </header>    
 
   <main class="content">
-       
+    <div class="wrapper">
+      test
+    </div>
   </main>
   <!-- .content -->
   <footer class="footer">
