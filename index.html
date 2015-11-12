@@ -65,13 +65,14 @@
        <div class="main-slider">
          <div class="swiper-container">
             <div class="swiper-wrapper">
+              <!--foreach $arResult-->
               <div class="swiper-slide">
                 <div class="slide-head">
                   <h2>Обзор изменений в законе о пресональных данных от Дмитрия Масекина</h2>
                 </div>
                 <div class="slide-description">
                   <ul>
-                    <li>Храненине даанных</li>
+                    <li>Хранение данных</li>
                     <li>Иностранные сервера</li>
                     <li>Международные IT-компании</li>
                     <li>Облачные хранилища</li>
@@ -89,7 +90,7 @@
                 <a class="see-detail" href="#" title="Подробнее">подробнее</a>
                 <div style="background: rgba(0, 0, 0, 0) url(/images/slide-1.jpg) no-repeat scroll top center / cover ;height: 100%;width: 100%;"> </div>
               </div>
-              
+              <!--end foreach-->
             </div>
           </div>
               <div class="swiper-pagination"></div>
@@ -110,15 +111,56 @@
                   });
                 })
               </script>
-          </div>
        </div>
        <!--end component main slider--> 
   </header>    
 
   <main class="content">
-    <div class="wrapper">
-      test
+    <!--start component service list on main page-->
+    <div class="main-service-list-wrapper">
+      <div class="service-list wrapper">
+        <div class="service-list-head">
+          <h1>Заголовок</h1>
+        </div>
+        <div class="service-list">
+        <!--foreach $arResult-->
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+            <div class="service-list-item">
+              <img src="/images/service-img.png" class="service-img" alt="#">
+              <span class="service-name">Взыскание долгов</span>
+            </div>
+        <!--endforeach-->
+        </div>
+      </div>
     </div>
+    <!--end component service list on main page-->
   </main>
   <!-- .content -->
   <footer class="footer">

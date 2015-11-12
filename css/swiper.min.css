@@ -159,7 +159,7 @@
 }
 /* Pagination Styles */
 .swiper-pagination {
-  bottom: 5px;
+  bottom: 27px;
   position: absolute;
   text-align: center;
   -webkit-transition: 300ms;
@@ -176,12 +176,13 @@
   opacity: 0;
 }
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #000;
-  opacity: 0.2;
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    height: 17px;
+    opacity: 1;
+    width: 20px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -201,7 +202,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
+  background: #ad9964;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
   background: #fff;
