@@ -75,8 +75,9 @@ body {
     content: "";
     display: block;
 }
-.logo{
-	margin-top: 3px;
+.logo {
+    margin-left: -2px;
+    margin-top: 3px;
 }
 .logo-link {
     float: left;
@@ -207,11 +208,19 @@ body {
 	background-color: #ccc;
 	position: relative;
 }
-.main-slider .see-detail{
-	position: absolute;
+.main-slider .see-detail {
+  	border: 1px solid;
+    bottom: 29px;
+    color: #a7791c;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 17px 33px 17px 41px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .slide-head{
- 	background: #ccc none repeat scroll 0 0;
+	padding-left: 28px;
     color: #fff;
     display: block;
     font-size: 2.33em;
@@ -221,6 +230,13 @@ body {
     position: absolute;
     top: 35px;
     width: 58.4%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a22222+0,b62323+23,bb2424+50,ba2323+78,ba2323+100,a22222+100 */
+	background: #a22222; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  #a22222 0%, #b62323 23%, #bb2424 50%, #ba2323 78%, #ba2323 100%, #a22222 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #a22222 0%,#b62323 23%,#bb2424 50%,#ba2323 78%,#ba2323 100%,#a22222 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #a22222 0%,#b62323 23%,#bb2424 50%,#ba2323 78%,#ba2323 100%,#a22222 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a22222', endColorstr='#a22222',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 /*end component main slider*/
 .wrapper:after{
@@ -228,7 +244,16 @@ body {
     content: "";
     clear: both;
 }
-
+.slide-description li {
+    margin-bottom: 20px;
+}
+.slide-description {
+   	font-family: Roboto;
+    font-size: 1.35em;
+    font-weight: lighter;
+    position: absolute;
+    top: 212px;
+}
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {

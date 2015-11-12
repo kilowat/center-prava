@@ -6,9 +6,13 @@ c_p= function(){
 			var sSeeW = $('.see-detail').width();
 			var w = window.innerWidth;
 			var wCenter = $('header .container').width()/2;
-			var wContainer = 960;
-			$('.slide-head').css('left',w/2-wContainer/2 +'px');
-			$('.see-detail').css('left',w/2-wContainer/2 +'px');
+			var wContainer = $('.wrapper').width();
+			$('.slide-head').css('left',w/2-wContainer/2-33 +'px');
+			$('.see-detail').css('left',w/2-wContainer/2+60 +'px');
+			$('.slide-description').css('left',w/2-wContainer/2+90 +'px');
+			$('.swiper-button-next').css('right',w/2-wContainer/2+68 +'px');
+			$('.swiper-button-prev').css('right',w/2-wContainer/2+'px');
+			$('.swiper-pagination').css('left',w/2+'px');
 			$('.swiper-container').height(window.innerWidth/q);	
 		},
 		miniSliderResize:function(){

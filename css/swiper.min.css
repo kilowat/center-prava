@@ -100,26 +100,23 @@
 /* Arrows */
 
 .swiper-button-next {
- 	background-position: center top;
-    background-repeat: no-repeat;
+    background-image:url('/images/slider-arrow-left.png');
     cursor: pointer;
-    height: 200px;
-    margin-top: -95px;
+    display: block;
+    height: 58px;
     position: absolute;
-    top: 50%;
-    width: 27px;
+    top: 82.4%;
+    width: 58px;
     z-index: 10;
 }
 .swiper-button-prev {
- background-position: center top;
-    background-repeat: no-repeat;
+    background-image:url('/images/slider-arrow-right.png');
     cursor: pointer;
-    height: 200px;
-    margin-top: -95px;
+    display: block;
+    height: 58px;
     position: absolute;
-    top: 50%;
-    transform: rotate(180deg);
-    width: 27px;
+    top: 82.4%;
+    width: 58px;
     z-index: 10;
 }
 .swiper-button-next:hover{
@@ -136,9 +133,7 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("/images/s-next.png");
-  left: 10px;
-  right: auto;
+
 }
 .swiper-button-prev.swiper-button-black,
 .swiper-container-rtl .swiper-button-next.swiper-button-black {
@@ -150,8 +145,8 @@
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("/images/s-next.png");
-  right: 10px;
+
+  left: 0px;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,
@@ -164,6 +159,7 @@
 }
 /* Pagination Styles */
 .swiper-pagination {
+  bottom: 5px;
   position: absolute;
   text-align: center;
   -webkit-transition: 300ms;
