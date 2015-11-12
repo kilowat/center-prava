@@ -50,6 +50,10 @@ html {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
 }
+p{
+	margin-bottom: 10px;
+	line-height: 1.2;
+}
 body {
 	font-family: 'Roboto';
 	font-size: 14px;
@@ -294,14 +298,21 @@ body {
 }
 /*end component main slider*/
 
+.component-section-head h2{
+	font-size: 2.8em;
+	text-align: center;
+	padding-top: 45px;
+	padding-bottom: 45px;
+} 
+
 /*start component service list on main page*/
 .main-service-list-wrapper .service-list-head{
-	text-align: center;
-	padding-top: 47px;
+	
 }
-.main-service-list-wrapper .service-list-head h1{
+.main-service-list-wrapper .service-list-head h2{
     color: #fff;
-    font-size: 2.8em;
+    font-weight: 300;
+    padding-bottom: 0px;
 }
 .main-service-list-wrapper {
     background-image: url("/images/service-bg.jpg");
@@ -309,6 +320,7 @@ body {
 }
 .main-service-list-wrapper .service-list{
 	text-align: center;
+	padding-bottom: 32px;
 }
 .main-service-list-wrapper .service-list-item {
 	display: inline-block;
@@ -330,6 +342,13 @@ body {
     clear: both;
 }
 
+.wrapper.about-text .component-section-head h2 {
+    padding-bottom: 38px;
+}
+.about-text p{
+	font-size: 1.1em;
+	margin-bottom: 30px;
+}
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
