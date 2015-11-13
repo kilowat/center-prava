@@ -66,7 +66,15 @@ body {
 	min-width: 280px;
 	margin: 0 auto;
 }
-
+.button-detail{
+	border: 1px solid;
+    color: #a7791c;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 17px 33px 17px 41px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 /* Header
 -----------------------------------------------------------------------------*/
@@ -304,7 +312,11 @@ body {
 	padding-top: 45px;
 	padding-bottom: 45px;
 } 
-
+.component-section-head .component-section-description {
+    font-size: 1.5em;
+    margin-bottom: 59px;
+    text-align: center;
+}
 /*start component service list on main page*/
 .main-service-list-wrapper .service-list-head{
 	
@@ -335,7 +347,128 @@ body {
     margin-top: 11px;
     width: 160px;
 }
+
 /*end compnent service list on main page*/
+
+/*start component news list on main page*/
+.main-news-list-wrapper{
+	background-color: #f0f4f8;
+}
+.main-news-list-wrapper .news-date {
+    color: #b5b5b5;
+    font-size: 1.28em;
+    margin-bottom: 17px;
+}
+.main-news-list-wrapper .news-name {
+    color: #000;
+    display: inline-block;
+    font-size: 1.28em;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-news-list-wrapper .news-name::after {
+    background: #af2323 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: 2px;
+}
+.main-news-list-wrapper .news-preview-text{
+	font-size: 1.14em;
+	color: #000;
+	font-weight: 300;
+}
+
+.main-news-list-wrapper .news-item:last-child {
+    margin-right: 0;
+}
+.main-news-list-wrapper .news-item {
+    display: inline-block;
+    line-height: 1.26em;
+    margin-right: 51px;
+    margin-top: 10px;
+    width: 284px;
+}
+.main-news-list-wrapper .button-detail-wrapper {
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+@media (max-width: 976px){
+	.main-news-list-wrapper .news-list{
+	    text-align: center;
+	}	
+	.main-news-list-wrapper .news-item{
+	    width: 100%;
+	    margin: 0px;
+	}	
+}
+/*end component news list on main page*/
+
+/*start component why-wee list*/
+.why-wee-wrapper{
+	background-image: url('/images/why-wee-bg.jpg');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+
+}
+.why-wee-wrapper .component-section-head > h2 {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    color: #fff;
+}
+.why-wee-wrapper .component-section-head .component-section-description{
+	color: #fff;
+	margin-bottom: 0px;
+}
+
+.why-wee-wrapper .item:nth-child(n+3){
+    margin-right: 0;
+}
+.why-wee-wrapper .item-list{
+	padding-bottom: 100px;
+}
+.why-wee-wrapper .item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 60px;
+    padding: 0;
+    text-align: center;
+    width: 296px;
+}
+.why-wee-wrapper .component-section-description > span {
+    display: inline-block;
+    line-height: 1.2em;
+    width: 495px;
+}
+.why-wee-wrapper .item-name {
+    color: #fff;
+    font-size: 1.57em;
+    margin-bottom: 44px;
+}
+.why-wee-wrapper .item-text {
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+.why-wee-wrapper .item-image {
+    margin-bottom: 27px;
+}
+@media (max-width: 776px){
+	.why-wee-wrapper .component-section-description > span {
+	    width: 100%;
+	}	
+}
+
+/*end component why-wee list*/
 .wrapper:after{
     display: block;
     content: "";
@@ -344,6 +477,9 @@ body {
 
 .wrapper.about-text .component-section-head h2 {
     padding-bottom: 38px;
+}
+.wrapper.about-text {
+    padding-bottom: 67px;
 }
 .about-text p{
 	font-size: 1.1em;
@@ -392,14 +528,16 @@ body {
 	    display: inline-block;
 	    margin-top: 14px;
 	}
-
+	.wrapper{
+		text-align: center;
+	}
 	.top-section {
 	    background: #fff none repeat scroll 0 0;
    	 	left: 0;
     	position: fixed;
     	text-align: center;
    	 	width: 100%;
-   		 z-index: 2;
+   		 z-index: 11;
 	}
 	.slogan{
 		display: none;
@@ -441,6 +579,9 @@ body {
 	}
 	.top-section-info{
 		margin: 0px;
+	}
+	.component-section-head h2{
+		font-size: 1.5em;
 	}
 
 }
