@@ -13,7 +13,7 @@
   <link href="/css/slick.css" rel="stylesheet">
   <link href="/css/slick-theme.css" rel="stylesheet">
   <link href="/css/swiper.min.css" rel="stylesheet">
-  <script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript"></script>
+  <script src="/js/pixp.js" type="text/javascript"></script>
     <script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="/js/app.js"></script>
     <script src="/js/swiper.min.js"></script>
@@ -27,11 +27,12 @@
         <a href="/" class="logo-link">
           <img src="/images/logo.png" class="logo" alt="центр права">
         </a>
-        <button id="show-menu-btn">Меню</button>
         <div class="top-section-right">
           <div class="top-section-info">
             <div class="top-section-col slogan">De lege feneda</div>
-            <div class="top-section-col feed-link"><a class="feed-back-link" href="#" title="как с нами связаться">Как с нами связаться</a></div>
+            <div class="top-section-col feed-link">
+              <button id="show-menu-btn"></button>
+              <a class="feed-back-link" href="#" title="как с нами связаться">Как с нами связаться</a></div>
             <div class="top-section-col">
               <div class="top-phone">
               <!--start include area-->
@@ -393,10 +394,89 @@
     </div>
     <!--end component pather list-->
 
+    <!--start ya map-->
+    <div class="ya-map-head-wrapper">
+      <div class="wrapper">
+        <h3>Как с нами связаться</h3>
+      </div>
+    </div>
+    <div id="ya-map">
+    </div>
+    <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+      <script type="text/javascript">
+          //ymaps.ready(init);
+          var myMap, 
+            myPlacemark;
+          function init(){ 
+            myMap = new ymaps.Map("ya-map", {
+              center: [45.03098630, 38.92131550],
+              zoom: 15
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([45.03098630, 38.92131550], {
+              hintContent: 'Наш офис',
+              balloonContent: 'Здесь наш офис'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+            myMap.controls.add(new ymaps.control.ZoomControl());
+            myMap.behaviors.disable('scrollZoom');
+            myMap.controls.remove('searchControl');
+            myMap.controls.remove('trafficControl');
+            myMap.controls.remove('fullscreenControl');
+            myMap.controls.remove('geolocationControl');
+            myMap.controls.remove('layerControl');
+          }
+      </script>
+    <!--end ya map-->
+
+    <!--start component feed back-->
+    <div class="feed-back">
+      <div class="wrapper">
+        <div class="component-section-head">
+          <h2>Задать вопрос юристу</h2>
+          <div class="component-section-description">
+            <span>
+              Если у вас есть срочный вопрос, но вы не можете сейчас с нами связаться,
+              задайте его в форме ниже, а также укажите контактные данные.
+              Мы с вами свяжемся сами и проконсультуем по Вашей
+              проблеме или пригласим к нам в офис.
+            </span>
+          </div>
+        </div>
+        <div class="feed-back-form">
+          <div class="form-row">
+            <input type="text" name="name" class="feed-back-input name" placeholder="ВАШИ ИМЯ И ФАМИЛИЯ">
+          </div>
+          <div class="form-row">
+            <input type="text" name="phone" class="feed-back-input phone" placeholder="НОМЕР ВАШЕГО ТЕЛЕФОНА">
+            <input type="text" name="email" class="feed-back-input email" placeholder="ВАШ EMAIL">          
+          </div>
+          <div class="form-row">
+            <textarea name="q-text" class="feed-back-input q-text" placeholder="ТЕКСТ ВАШЕГО ВОПРОСА"></textarea>        
+          </div>
+          <div class="form-row">
+            <input type="reset" value="ОЧИСТИТЬ ФОРМУ" class="clear-from">
+            <input type="reset" value="ОТПРАВИТЬ ЗАПРОС" class="send">      
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end component feed back-->
   </main>
   <!-- .content -->
   <footer class="footer">
-    
+    <div class="wrapper">
+      <div class="footer-col">
+        ООО «Центр Права» 2002-2015 гг.
+      </div>
+      <div class="footer-col">
+        Быстро с 1С-Битрикс
+      </div>
+      <div class="footer-col">
+       Создание сайта: <a href="http://aliens.pro" title="aliens.pro">ALIENS.PRO</a>
+      </div>
+    </div>
   </footer>
   <!-- .footer -->
 </body>

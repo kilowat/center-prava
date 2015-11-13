@@ -54,6 +54,12 @@ p{
 	margin-bottom: 10px;
 	line-height: 1.2;
 }
+a{
+	color: #ffffff;
+}
+a:hover{
+	color: #ba2323;
+}
 body {
 	font-family: 'Roboto';
 	font-size: 14px;
@@ -176,6 +182,9 @@ body {
     text-decoration: none;
     position: relative;
 }
+.top-menu li a:hover, .top-menu li a.selected{
+	color: red;
+}
 @media (max-width: 918px){
 	.top-menu li a {
 	    display: inline-block;
@@ -200,6 +209,10 @@ body {
 	.top-menu li a::after{
 		display: none;
 	}
+	.top-menu li a:hover, .tom-menu li a.selected{
+		background: red;
+		color: #fff;
+	}
 	.top-menu {
 	    background: #eee none repeat scroll 0 0;
 	    display: none;
@@ -207,7 +220,7 @@ body {
 	    margin-left: 15%;
 	    margin-right: 15%;
 	    position: absolute;
-	    top: 54px;
+	    top: 53px;
 	    width: 70%;
 	}
 
@@ -613,18 +626,6 @@ body {
     margin-bottom: 44px;
     position: relative;
 }
-.promo .item-name::after {
-    background: #a7791c none repeat scroll 0 0;
-    content: "";
-    display: block;
-    height: 1px;
-    left: 0;
-    margin-left: 40%;
-    margin-right: 40%;
-    position: absolute;
-    top: 43px;
-    width: 20%;
-}
 .promo .item-text {
     color: #000;
     font-size: 1.1em;
@@ -688,6 +689,155 @@ body {
 }
 
 /*end component pather slider*/
+
+/*start ya-map*/
+.ya-map-head-wrapper{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c2902b+0,c2902b+69,af8020+69,af8020+100 */
+	background: #c2902b; /* Old browsers */
+	background: -moz-linear-gradient(-72deg,  #c2902b 0%, #c2902b 57%, #af8020 57%, #af8020 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-72deg,  #c2902b 0%,#c2902b 57%,#af8020 57%,#af8020 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(162deg,  #c2902b 0%,#c2902b 57%,#af8020 57%,#af8020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2902b', endColorstr='#af8020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.ya-map-head-wrapper .wrapper > h3 {
+    font-size: 2.85em;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.ya-map-head-wrapper .wrapper {
+    text-align: center;
+}
+#ya-map{
+	height: 500px;
+}
+/*end ya-map*/
+
+/*start feed-back on main page*/
+.feed-back{
+	background-image: url('/images/feed-back-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	min-height: 700px;
+}
+.feed-back .component-section-head h2 {
+	padding-bottom: 20px;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.feed-back .component-section-description {
+    padding-left: 115px;
+    padding-right: 115px;
+    line-height: 1.13em;
+    color: #fff;
+    margin-bottom: 44px;
+}
+.feed-back-form {
+	display: table;
+    margin: auto;
+    text-align: center;
+}
+
+.form-row:nth-child(2):after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.feed-back-input{
+	height: 50px;
+	opacity:.7;
+	margin-bottom: 14px;
+	font-size: 1.2em;
+	font-family: Roboto;
+}
+.form-row{
+	display: table-row;
+}
+.feed-back-input::-webkit-input-placeholder {color:#000;}
+.feed-back-input::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+.feed-back-input:-moz-placeholder           {color:#000;}/* Firefox 18- */
+.feed-back-input:-ms-input-placeholder      {color:#000;}
+
+.feed-back-input.name{
+	width:500px ;
+}
+.feed-back-input.phone{
+	width: 240px;
+	float: left;
+	display: block;
+} 
+.feed-back-input.email{
+	width: 240px;
+	float: right;
+	display: block;
+}
+.feed-back-input.q-text{
+	width: 500px;
+	height: 185px;
+}
+.feed-back-form .clear-from {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #a7791c;
+    color: #a7791c;
+    cursor: pointer;
+    float: left;
+    font-size: 1.2em;
+    height: 50px;
+    width: 245px;
+}
+.feed-back-form .clear-from:hover{
+	color: red;
+	border-color:red;
+}
+.feed-back-form .send {
+    background: #a7791c none repeat scroll 0 0;
+    border: 1px solid #a7791c;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 1.2em;
+    height: 50px;
+    width: 245px;
+}
+.feed-back-form .send:hover{
+	background-color: red;
+}
+@media (max-width: 960px){
+	.feed-back .component-section-description {
+		padding: 0px;
+	}
+}
+@media (max-width: 534px){
+	.feed-back-input{
+		width: 100%;
+	}
+	.feed-back-input.name{
+		width: 100%;
+	}
+	.feed-back-input.email{
+		width: 100%;
+		float: none;
+	}
+	.feed-back-input.phone{
+		width: 100%;
+		float: none;
+	}
+	.feed-back-form .send{
+		width: 50%;
+	}
+	.feed-back-form .clear-from{
+		width: 50%;
+	}
+	.feed-back-input.q-text{
+		width: 100%;
+	}
+}
+/*end feed-back on main page*/
+
 .wrapper:after{
     display: block;
     content: "";
@@ -716,6 +866,22 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
+	min-height: 78px;
+	background-color:#000;
+	text-align: center;
+}
+.footer .footer-col {
+    color: #fff;
+    display: inline-block;
+    padding-top: 30px;
+}
+.footer .footer-col:first-child {
+    margin-right: 0;
+    float: left;
+}
+.footer .footer-col:last-child {
+    margin-right: 0;
+    float: right;
 }
 @media (max-width: 970px){
 	.logo {
@@ -744,8 +910,21 @@ body {
 }
 @media (max-width: 776px){
 	#show-menu-btn {
+	    background-color:#ccc;
+	    background-image: url('/images/menu-ico.png');
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    border: medium none;
 	    display: inline-block;
-	    margin-top: 14px;
+	    cursor: pointer;
+	    height: 53px;
+	    width: 50px;
+	    margin: 0;
+	    text-transform: uppercase;
+	}
+	#show-menu-btn:hover{
+		background-color: red;
 	}
 	.wrapper{
 		text-align: center;
@@ -756,7 +935,8 @@ body {
     	position: fixed;
     	text-align: center;
    	 	width: 100%;
-   		 z-index: 11;
+   		z-index: 11;
+   		border-bottom: 1px solid #ccc;
 	}
 	.slogan{
 		display: none;
@@ -766,18 +946,26 @@ body {
 	}
 
 	.feed-back-link {
-	   background: #ccc none repeat scroll 0 0;
-	   border: medium none;
-	   font-size: 0;
-	   height: 20px;
-	   left: -25px;
-	   margin-top: 0;
-	   padding-top: 0;
-	   position: relative;
-	   top: 5px;
-	   width: 30px;
+ 		background-color:#ccc;
+	    background-image: url('/images/phone-ico.png');
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    border: medium none;
+	    display: block;
+	    float: right;
+	    font-size: 0;
+	    height: 53px;
+	    margin-left: 5px;
+	    margin-right: 10px;
+	    margin-top: 0;
+	    padding-top: 0;
+	    position: relative;
+	    width: 50px;
 	}
-
+	.feed-back-link:hover{
+		background-color: red;
+	}
 	.top-section-col.feed-link {
 	    width: auto;
 	}
@@ -802,13 +990,32 @@ body {
 	.component-section-head h2{
 		font-size: 1.5em;
 	}
+	.ya-map-head-wrapper .wrapper > h3{
+		font-size: 1.5em;
+	}
+	.footer .footer-col{
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+	.footer .footer-col{
+		padding-top: 10px;
+	}
+
 
 }
+
 @media (max-width: 380px){
 	.top-phone{
 		font-size: 1em;
+		margin-top: 5px;
 	}
 	.feed-back-link{
 		left: -4px;
+	}
+@media (max-width: 336px){
+	.top-phone{
+		font-size: 0.8em;
+		margin-top: 8px;
 	}
 }
