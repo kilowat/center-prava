@@ -646,6 +646,48 @@ body {
 	}	
 }
 /*end component promo list*/
+
+/*start component pahter slider*/
+.slick-slider{
+	text-align: center;
+}
+.slider-mini-wrapper .component-section-head h2{
+	padding-bottom: 19px;
+}
+
+.slider-mini-wrapper .component-section-head .component-section-description {
+    font-size: 1.5em;
+    margin-bottom: 86px;
+    text-align: center;
+}
+.slick-next{
+	right: -15px!important;
+}
+.slick-prev{
+	left: -15px!important;
+}
+.slick-track {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media (max-width: 980px){
+	.slick-next{
+		right: 0px!important;
+	}
+	.slick-prev{
+		left: 0px!important;
+	}
+}
+@media (max-width: 958px){
+	.slick-next{
+		right: 0px!important;
+	}
+	.slick-prev{
+		left: 0px!important;
+	}
+}
+
+/*end component pather slider*/
 .wrapper:after{
     display: block;
     content: "";

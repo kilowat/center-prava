@@ -23,7 +23,7 @@ c_p= function(){
 		miniSliderResize:function(){
 			var count = 4;
 			if(window.innerWidth<=960)
-				count = 3;
+				count = 2;
 			if(window.innerWidth<=720)
 				count = 2;
 			if(window.innerWidth<=480)
@@ -37,8 +37,10 @@ c_p= function(){
 }
 window.onresize = function(){
 	c_p().sliderResize();
+
 };
 
 $(document).ready(function(){
 	c_p().sliderResize();
+	c_p().miniSliderResize();
 });
