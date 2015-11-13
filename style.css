@@ -453,6 +453,19 @@ body {
     color: #fff;
     font-size: 1.57em;
     margin-bottom: 44px;
+    position: relative;
+}
+.why-wee-wrapper .item-name::after {
+    background: #a7791c none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    margin-left: 40%;
+    margin-right: 40%;
+    position: absolute;
+    top: 43px;
+    width: 20%;
 }
 .why-wee-wrapper .item-text {
     color: #fff;
@@ -462,13 +475,177 @@ body {
 .why-wee-wrapper .item-image {
     margin-bottom: 27px;
 }
+@media (max-width: 969px){
+	.why-wee-wrapper .item  {
+	    width: 100%;
+	   	margin-right:0px; 
+	    margin-left:0px;
+	}	
+}
 @media (max-width: 776px){
 	.why-wee-wrapper .component-section-description > span {
 	    width: 100%;
 	}	
 }
-
 /*end component why-wee list*/
+
+/*start component warranty list*/
+.warranty-wrapper{
+	background-image: url('/images/warranty-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+}
+.warranty .component-section-head > h2 {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    color: #fff;
+}
+.warranty .component-section-head .component-section-description{
+	color: #fff;
+	margin-bottom: 0px;
+}
+
+.warranty .item:nth-child(n+3){
+    margin-right: 0;
+}
+.warranty .item-list{
+	padding-bottom: 100px;
+}
+.warranty .item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 60px;
+    padding: 0;
+    text-align: center;
+    width: 296px;
+}
+.warranty .component-section-description > span {
+    display: inline-block;
+    line-height: 1.2em;
+    width: 623px;
+}
+.warranty .item-name {
+    color: #fff;
+    font-size: 1.57em;
+    margin-bottom: 44px;
+    position: relative;
+}
+.warranty .item-name::after {
+    background: #a7791c none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    margin-left: 40%;
+    margin-right: 40%;
+    position: absolute;
+    top: 43px;
+    width: 20%;
+}
+.warranty .item-text {
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+.warranty .item-image {
+    margin-bottom: 27px;
+}
+@media (max-width: 969px){
+	.warranty .item  {
+	    width: 100%;
+	    margin-right:0px; 
+	    margin-left:0px;
+	}	
+}
+@media (max-width: 776px){
+	.warranty .component-section-description > span {
+	    width: 100%;
+	}	
+}
+/*end component warranty list*/
+
+/*start component promo list*/
+.promo-wrapper{
+	background-color: #f0f4f8;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+}
+.promo .component-section-head > h2 {
+    padding-bottom: 20px;
+    padding-top: 44px;
+    color: #000;
+}
+.promo .component-section-head .component-section-description{
+	color: #000;
+	margin-bottom: 0px;
+}
+
+.promo .item:nth-child(n+4){
+    margin-right: 0;
+    margin-left: 0;
+}
+.promo .item-list{
+	padding-bottom: 100px;
+}
+.promo .item {
+  	display: inline-block;
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-top: 35px;
+    padding: 0;
+    text-align: center;
+    width: 210px;
+}
+.promo .component-section-description > span {
+    display: inline-block;
+    line-height: 1.2em;
+    width: 623px;
+    color: #000;
+}
+.promo .item-name {
+    color: #000;
+    font-size: 1.57em;
+    margin-bottom: 44px;
+    position: relative;
+}
+.promo .item-name::after {
+    background: #a7791c none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    margin-left: 40%;
+    margin-right: 40%;
+    position: absolute;
+    top: 43px;
+    width: 20%;
+}
+.promo .item-text {
+    color: #000;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+.promo .item-image {
+    margin-bottom: 27px;
+}
+@media (max-width: 969px){
+	.promo .item  {
+	    width: 100%;
+	    margin-right:0px; 
+	    margin-left:0px;
+	}	
+}
+@media (max-width: 776px){
+	.promo .component-section-description > span {
+	    width: 100%;
+	}	
+}
+/*end component promo list*/
 .wrapper:after{
     display: block;
     content: "";
