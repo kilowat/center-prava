@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Roboto+Slab&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link href="/css/slick.css" rel="stylesheet">
+  <link href="/css/slick-theme.css" rel="stylesheet">
+  <link href="/css/swiper.min.css" rel="stylesheet">
+  <script src="/js/pixp.js" type="text/javascript"></script>
+    <script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper top-section-wrapper">
+      <div class="top-section">
+        <a href="/" class="logo-link">
+          <img src="/images/logo.png" class="logo" alt="центр права">
+        </a>
+        <div class="top-section-right">
+          <div class="top-section-info">
+            <div class="top-section-col slogan">De lege feneda</div>
+            <div class="top-section-col feed-link">
+              <button id="show-menu-btn"></button>
+              <a class="feed-back-link" href="#" title="как с нами связаться">Как с нами связаться</a></div>
+            <div class="top-section-col">
+              <div class="top-phone">
+              <!--start include area-->
+                <div class="top-phone-number">
+                 +7 (918) 999-55-59
+                </div>
+                <div class="top-phone-number">
+                  +7 (861) 235-12-19
+                </div>
+                <!--end inlcude area-->
+              </div>
+            </div>
+          </div>
+          <nav>
+          <!--start component top menu-->
+            <ul class="top-menu">
+              <li><a href="#">Центр права</a></li>
+              <li><a href="#">Наши услуги</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Стоймость услуг</a></li>
+              <li><a href="#">Отзывы</a></li>
+            </ul>
+            <script>
+              $('#show-menu-btn').click(function(){
+                $('.top-menu').slideToggle();
+              });
+            </script>
+          <!--end component top menu-->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>    
+
+  <main class="content">
+    <!--start component bread crumbs-->
+    <div class="wrapper">
+        <ul class="bread-crumbs">
+          <li><a href="#" title="#">Главная</a></li>
+          <li><span>Новости</span></li>
+        </ul>
+    </div>
+    <!--end component bread crumbs-->
+    <style>
+      .bread-crumbs a{
+        color: #000;
+      }
+      .bread-crumbs li:after{
+        color: #000;
+      }
+      .section-head h1{
+        color: #000;
+      }
+      main{
+        background-image: url(/images/news-page-bg.jpg);
+      }
+     </style>
+    <!--start component section head-->
+    <div class="section-head wrapper">
+      <h1>Новая редакция о законе пресональных данных</h1>
+    </div>
+    <!--end component section head--> 
+     <div class="wrapper">
+      <!--start component news detail-->
+      <div class="news-detail">
+        <img class="news-img" alt="#" src="/images/news-img.jpg">
+        <div class="news-date">
+          22.23.2014
+        </div>
+        <div class="news-text">
+            Обзор изменений в законе о персональных данных пользователей рунета от нашего юриста по корпоративным делами. Обзор изменений в законе о персональных данных пользователей рунета от нашего юриста по корпоративным делами. Обзор изменений в законе о персональных данных пользователей рунета от нашего юриста по корпоративным делами. 
+
+    Обзор изменений в законе о персональных данных пользователей рунета от нашего юриста по корпоративным делами. Обзор изменений в законе о персональных данных пользователей рунета от нашего юриста по корпоративным делами.  Юридическое агентство «Центр права» — юридическая фирма, оказывающая юридические услуги с 2002 года. Основным видом деятельности фирмы являются: представительство юридических и физических лиц в арбитражныйх судах, судах общей юрисдикции, службе судебных приставов, юридические консультации, юридические услуги и юридическое сопровождение бизнеса наших клиентов. 
+
+    Юридическое агентство «Центр права» — юридическая фирма, оказывающая юридические услуги с 2002 года. Основным видом деятельности фирмы являются: представительство юридических и физических лиц в арбитражныйх судах, судах общей юрисдикции, службе судебных приставов, юридические консультации, юридические услуги и юридическое сопровождение бизнеса наших клиентов. 
+        </div>
+        <div class="buttons-wrapper">
+          <a href='#' class="button-detail prev-news" title="предыдующий материал">Предыдущий материал</a>
+          <a href="#" class="button-detail next-news" title="следующий материал">Следующий материал</a>
+        </div>
+      </div>
+      <!--end component news detail-->
+
+      <!--start component other news-->
+      <div class="wrapper other-news">
+        <!--foreach $arResult-->
+        <div class="news-item">
+          <a href="#" title="#" class="news-img-link"><img class="news-img" src="/images/news-mini-img.jpg" alt="#"></a>
+          <div class="news-date">
+            22.11.2015
+          </div>
+          <a href="#" class="news-name">
+            Вступила в силу новая редакция 
+          </a>
+          <div class="news-text">
+            Обзор изменений в законе о персональных данных пользователей рунета от нашего юриста 
+          </div>
+        </div>
+        <div class="news-item">
+          <a href="#" title="#" class="news-img-link"><img class="news-img" src="/images/news-mini-img.jpg" alt="#"></a>
+          <div class="news-date">
+            22.11.2015
+          </div>
+          <a href="#" class="news-name">
+            Вступила в силу новая редакция 
+          </a>
+          <div class="news-text">
+            Обзор изменений в законе о персональных данных пользователей рунета от нашего юриста 
+          </div>
+        </div>
+        <!--end foreach-->
+      </div>
+      <!--end component other news-->
+    </div>
+    <div class="push"></div>
+  </main>
+  <!-- .content -->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-col">
+        ООО «Центр Права» 2002-2015 гг.
+      </div>
+      <div class="footer-col">
+        Быстро с 1С-Битрикс
+      </div>
+      <div class="footer-col">
+       Создание сайта: <a href="http://aliens.pro" title="aliens.pro">ALIENS.PRO</a>
+      </div>
+    </div>
+  </footer>
+  <!-- .footer -->
+</body>
+
+</html>
