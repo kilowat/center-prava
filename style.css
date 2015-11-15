@@ -1498,7 +1498,7 @@ main{
         float: right;
         font-size: 1em;
     }
-    .news-detail .news-img{
+    .service-details .news-img{
         float: none;
         margin: 0px;
     }
@@ -1588,14 +1588,18 @@ main{
         width: 100%;
         border: none;
     }
-    .other-service .service-img{
+    .other-service .service-img, .other-service .service-img-link{
         float: none;
+        margin: 0px;
     }
     .other-service .service-item {
         border-bottom: 1px solid #ccc;
         margin-bottom: 29px;
         padding-bottom: 10px;
         position: relative;
+    }
+    .other-service .service-item{
+        height: auto;
     }
 }
 /*end component other service*/
