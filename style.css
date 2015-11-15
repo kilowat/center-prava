@@ -1502,9 +1502,15 @@ main{
         float: none;
         margin: 0px;
     }
+    .form-order .form-order-input{
+        width: 96%;
+    }
+    .service-detail .service-img{
+        float: none;
+    }
 }
 
-@media (max-width: 540px){
+@media (max-width: 545px){
     .service-detail .buttons-wrapper .button-detail.prev-news{
         float: none;
         font-size: 1em;
@@ -1516,25 +1522,30 @@ main{
         font-size: 1em;
         width: 50%;
     }
-}
-@media (max-width: 534px){
-    .form-order-input{
-        width: 100%;
+    .form-order{
+        width: 380px;
     }
-      .form-order .send{
-        width: 50%;
-        font-size: 1em;
+
+    .form-order .form-head {
+        font-size: 1.3em;
+    }
+    .form-order .clear-from , .form-order .send{
         margin-bottom: 10px;
-    }
-    .form-order .clear-from{
-        width: 50%;
-       font-size: 1em;
-       margin-bottom: 10px;
-    }
-    .feed-back-input.q-text{
-        width: 100%;
+        margin-top: 10px;
+        float: none;
     }
 }
+@media (max-width: 430px){
+    .form-order{
+        width: 240px
+    }
+
+    .form-order .form-order-input {
+        width: 90%;
+        font-size: 1.1em;
+    }
+}
+
 /*end component service detail*/
 
 /*start component other news*/
