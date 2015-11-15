@@ -1366,6 +1366,239 @@ main{
     }
 }
 /*end component reviews*/
+
+/*start component service detail*/
+.service-detail .service-img {
+    float: left;
+    margin-right: 22px;
+}
+.wrapper.service-detail {
+    padding-top: 57px;
+}
+.service-detail .news-date {
+    color: #b5b5b5;
+    font-size: 1.2em;
+    position: relative;
+}
+.service-detail .service-text {
+    font-size: 1.14em;
+    font-weight: 300;
+    line-height: 1.1em;
+    margin-top: 6px;
+}
+.service-detail {
+    float: left;
+    margin-top: 54px;
+    width: 69%;
+}
+.service-detail .buttons-wrapper{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.service-detail .buttons-wrapper:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.service-detail .buttons-wrapper .button-detail.prev-news{
+    float: left;
+}
+.service-detail .buttons-wrapper .button-detail.next-news{
+    float: right;
+}
+.service-detail-wrapper:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.form-order{
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+
+.form-order .form-row:nth-child(2):after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.form-order .form-order-input{
+    height: 50px;
+    width: 500px;
+    opacity:1;
+    margin-bottom: 14px;
+    font-size: 1.2em;
+    font-family: Roboto;
+    padding-left: 20px;
+}
+.form-order .form-row{
+    display: table-row;
+}
+.form-order-input:-webkit-input-placeholder {color:#000;}
+.form-order-input:-moz-placeholder          {color:#000;}/* Firefox 19+ */
+.form-order-input:-moz-placeholder           {color:#000;}/* Firefox 18- */
+.form-order-input:-ms-input-placeholder      {color:#000;}
+
+.form-order .clear-from {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #a7791c;
+    color: #a7791c;
+    cursor: pointer;
+    float: left;
+    font-size: 1.2em;
+    height: 50px;
+    width: 245px;
+}
+.form-order .clear-from:hover{
+    color: red;
+    border-color:red;
+}
+.form-order .send {
+    background: #a7791c none repeat scroll 0 0;
+    border: 1px solid #a7791c;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 1.2em;
+    height: 50px;
+    width: 245px;
+}
+.form-order .send:hover{
+    background-color: red;
+}
+.form-order-wrapper {
+    border: 1px solid #a7791c;
+    margin-top: 20px;
+   padding-top: 35px;
+   padding-bottom: 35px;
+}
+.form-order .form-head {
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+@media (max-width: 970px){
+    .service-detail{
+        float: none;
+        width: 100%;
+    }
+    .buttons-wrapper{
+        margin-bottom: 10px!important;
+        margin-top: 10px!important;
+    }
+}
+@media (max-width: 776px){
+    .service-detail .buttons-wrapper .button-detail.prev-news{
+        float: left;
+        font-size: 1em;
+    }
+    .service-detail .buttons-wrapper .button-detail.next-news{
+        float: right;
+        font-size: 1em;
+    }
+    .news-detail .news-img{
+        float: none;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 540px){
+    .service-detail .buttons-wrapper .button-detail.prev-news{
+        float: none;
+        font-size: 1em;
+        width: 50%;
+        margin-bottom:10px;
+    }
+    .service-detail .buttons-wrapper .button-detail.next-news{
+        float: none;
+        font-size: 1em;
+        width: 50%;
+    }
+}
+@media (max-width: 534px){
+    .form-order-input{
+        width: 100%;
+    }
+      .form-order .send{
+        width: 50%;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .form-order .clear-from{
+        width: 50%;
+       font-size: 1em;
+       margin-bottom: 10px;
+    }
+    .feed-back-input.q-text{
+        width: 100%;
+    }
+}
+/*end component service detail*/
+
+/*start component other news*/
+.other-service .service-img{
+    float: left;
+}
+.other-service .service-item::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.other-service .service-img-link {
+    float: left;
+    margin-right: 27px;
+}
+
+.other-service .service-name {
+    color: #000;
+    display: inline-block;
+    float: left;
+    font-size: 1.32em;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    padding-left: 5px;
+    text-decoration: none;
+    width: 140px;
+}
+.other-service .service-name:hover{
+    color: #a7791c;
+    position: relative;
+}
+.other-service .service-item {
+    height: 103px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.other-service {
+    float: right;
+    margin-top: 57px;
+    width: 29%;
+}
+@media (max-width: 970px){
+    .other-service{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    } 
+    .other-service .service-name{
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    .other-service .service-img{
+        float: none;
+    }
+    .other-service .service-item {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 29px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+}
+/*end component other service*/
 .wrapper:after{
     display: block;
     content: "";
